@@ -1,0 +1,222 @@
+body{
+  font-family: sans-serif;
+}
+
+
+.nav__content{
+  display: flex;
+  box-shadow:  2px 2px 4px 0px;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav__content_menú{
+  display: none;
+}
+.nav__content__img{
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  left: 50px;
+}
+.nav__ul{
+
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  background: white;
+  margin-left: 800px;
+  z-index: 10;
+}
+
+.nav__li {
+  margin-top: 30px;
+ text-decoration: none;
+ padding:10px 20px 10px 20px;
+ margin-left:10px;
+ list-style: none;
+ font-size: 20px;
+ cursor: pointer;
+
+
+
+}
+
+.nav__li a{
+  color: black;
+  text-decoration: none;
+  transition: all 1s;
+
+}
+
+
+.nav__li a:hover{
+  color:red;
+}
+
+.head__image_breagroumb{
+  width: 100%;
+  height: 400px;
+  background-image: url("http://localhost/carniceria/images/carne-min.jpg");
+  background-size: cover;
+ background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+
+}
+
+
+.seccion_1{
+  width: 50%;
+  height: 500px;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: #f3f3f3;
+  box-shadow: -0.5px 0px 5px 0px;
+  border-radius: 10px;
+
+
+
+}
+
+
+.inicio_admin{
+  width: 100%;
+  height: 300px;
+  font-size: 20px;
+  color:black;
+}
+
+.inicio_admin h1{
+  text-align: center;
+  position: relative;
+  top:20%;
+}
+
+footer{
+
+  background-color: #f3f3f3;
+  display: flex;
+  margin-top: 280px;
+  background: #e52d27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 40px;
+}
+
+.image__footer{
+  padding: 20px;
+}
+
+.footer__opciones_ul{
+  margin-left: 300px;
+}
+.footer__opciones_ul li{
+  list-style: none;
+  color: white;
+
+}
+.footer__opciones_li{
+  margin-top: 10px;
+  list-style:none;
+  cursor: pointer;
+  transition: all .5s;
+}
+.footer__opciones_li:hover{
+  color :red;
+
+}
+
+
+
+
+
+
+
+
+@media(max-width:899px) {
+  .content{
+    overflow-x:hidden;
+  }
+  .nav__content{
+    height: 100px;
+  }
+  .nav__content_menú{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+  }
+  .nav__content__img{
+    width: 200px;
+    left: 10px;
+    position: absolute;
+    height: 60px;
+  }
+
+  .nav__content_menú{
+    margin-top: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .nav__content_menú img{
+    margin-top: 20px;
+    margin-left: 10px;
+
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav__ul{
+    display: none;
+  }
+
+  .nav__ul.active{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 370px;
+    text-align: center;
+  }
+  .nav__ul.desactive{
+    display: none;
+  }
+  .nav__content_menú img.active{
+    transition: all 1s;
+    transform: rotateZ(90deg);
+
+  }
+  .nav__content_menú img.desactive{
+    transition: all 1s;
+    transform: rotateZ(-3deg);
+
+  }
+
+  .seccion_1{
+    width: 100%;
+  }
+
+
+
+
+  footer{
+    display: block;
+  }
+  .image__footer{
+    display: block;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .footer__opciones_ul{
+    margin-left: 10px;
+  }
+
+
+}

@@ -1,0 +1,553 @@
+body{
+  font-family: sans-serif;
+}
+
+
+.nav__content{
+  display: flex;
+  box-shadow:  2px 2px 4px 0px;
+  padding-bottom: 20px;
+  justify-content: flex-end;
+  align-items: center;
+
+}
+
+.nav__content_menú{
+  display: none;
+}
+.nav__content__img{
+  width: 300px;
+  height: 80px;
+  position: absolute;
+  left: 50px;
+}
+.nav__ul{
+  display: flex;
+
+  justify-content: flex-end;
+  align-items: center;
+  background: white;
+  margin-left: 800px;
+}
+
+.nav__li {
+  margin-top: 30px;
+ text-decoration: none;
+ padding:10px 20px 10px 20px;
+ margin-left:10px;
+ list-style: none;
+ font-size: 20px;
+ transition: all 1s;
+ cursor: pointer;
+
+
+
+}
+
+.nav__li:hover{
+  color:red;
+}
+
+.nav__li a{
+  color: black;
+  text-decoration: none;
+  transition: all 1s;
+
+
+
+}
+
+
+.nav__li a:hover{
+  color:red;
+}
+
+
+.head__image_breagroumb{
+  width: 100%;
+  height: 400px;
+  background-image: url("http://localhost/carniceria/images/carne-min.jpg");
+  background-size:cover;
+ background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: 100% 60%;
+
+}
+
+
+.seccion_1{
+  width: 50%;
+  height: 500px;
+  margin-top: 50px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.seccion_1__titulo{
+  text-align: center;
+  font-size: 30px;
+  color: red;
+}
+
+.card_presentacion{
+  position: relative;
+  width: 100%;
+  height: 600px;
+  background-color: #f3f3f3;
+  border-radius: 4px;
+  box-shadow: -0.5px -2px 10px 0px;
+  transition: all 1s;
+
+}
+.card_presentacion__foto{
+  width: 50%;
+  border-radius: 50%;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  position: relative;
+  top:30px;
+
+}
+
+.card_presentacion__texto{
+  margin-top: 60px;
+  background: blue;
+  text-align: center;
+  font-size: 30px;
+  background: transparent;
+
+}
+
+.card_presentacion__boton{
+  position: relative;
+  width: 200px ;
+  height: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  border-radius: 10px;
+  background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+box-shadow: -0.5px 0px 5px 0px;
+
+}
+.card_presentacion__boton a{
+  text-decoration: none;
+  color:white;
+
+}
+
+.card_presentacion:hover{
+  background: transparent;
+  color: white;
+
+}
+.card_presentacion::before{
+  content: "";
+  width: 100%;
+  height: 600px;
+  z-index: -1;
+    background: #ED213A;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  position:absolute;
+}
+
+.seccion_2{
+  margin-top: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 2px;
+  box-shadow: -0.5px 0px 5px 0px;
+
+}
+
+.seccion_2_ofrecimiento_1{
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.seccion_2_ofrecimiento_1:hover{
+  background: transparent;
+}
+
+
+.seccion_2_ofrecimiento_1_anuncio{
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  top: 170px;
+  text-align: center;
+  height: 460px;
+  background-color: green;
+  top:0px;
+  transition: all 1s;
+  background: white;
+}
+
+.seccion_2_ofrecimiento_1_anuncio h2{
+  position: relative;
+  top: 160px;
+}
+
+.seccion_2_ofrecimiento_1_anuncio:hover{
+  background: transparent;
+  color: white;
+
+}
+
+.seccion_2_ofrecimiento_1_anuncio:before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  height: 500px;
+  top:0px;
+  left: 0px;
+
+}
+
+.seccion_2_ofrecimiento_1_imagen{
+  background-color: red;
+  border-radius: 2px;
+  background-image: url("http://localhost/carniceria/images/carne_nueva-min.jpg");
+  background-size: cover;
+  background-size: 100% 100%;
+
+  width: 50%;
+  height: 500px;
+}
+
+.seccion_3{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  display:flex;
+  justify-content: center;
+  width: 80%;
+  border-radius: 2px;
+  box-shadow: -0.5px 0px 5px 0px;
+
+}
+
+
+.seccion_2_ofrecimiento_2{
+  width: 100%;
+  height: 500px;
+  display: flex;
+}
+
+.seccion_2_ofrecimiento_2:hover{
+  background: transparent;
+}
+
+.seccion_2_ofrecimiento_2_anuncio{
+  width: 50%;
+  padding: 20px;
+  position: relative;
+  top: 170px;
+  text-align: center;
+  height: 460px;
+  background-color: green;
+  top:0px;
+  transition: all 1s;
+  background: white;
+}
+
+.seccion_2_ofrecimiento_2_anuncio h2{
+  position: relative;
+  top: 160px;
+}
+
+.seccion_2_ofrecimiento_2_anuncio:hover{
+  background: transparent;
+  color: white;
+
+}
+
+.seccion_2_ofrecimiento_2_imagen{
+  background-color: red;
+  border-radius: 2px;
+  background-image: url("http://localhost/carniceria/images/dinero-min.jpeg");
+  background-size: cover;
+  background-size: 100% 100%;
+
+  width: 50%;
+  height: 500px;
+}
+
+.seccion_2_ofrecimiento_2_anuncio:before{
+  content: "";
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  background: #ED213A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #93291E, #ED213A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+  height: 500px;
+  top:0px;
+  left: 0px;
+
+}
+
+
+
+footer{
+
+  background-color: #f3f3f3;
+  display: flex;
+  margin-top: 280px;
+  background: #e52d27;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #b31217, #e52d27);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #b31217, #e52d27); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  padding: 40px;
+}
+
+.image__footer{
+  padding: 20px;
+}
+
+.footer__opciones_ul{
+  margin-left: 300px;
+}
+.footer__opciones_ul li{
+  list-style: none;
+  color: white;
+
+}
+.footer__opciones_li{
+  margin-top: 10px;
+  list-style:none;
+  cursor: pointer;
+  transition: all .5s;
+}
+.footer__opciones_li a:hover{
+  color :red;
+
+}
+
+.footer__opciones_li a{
+  color: white;
+  text-decoration: none;
+  transition: all 1s;
+}
+
+
+
+
+
+
+@media(max-width:899px) {
+  .content{
+    overflow-x:hidden;
+  }
+  .nav__content{
+    height: 100px;
+  }
+  .nav__content_menú{
+    display: block;
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+  }
+  .nav__content__img{
+    width: 200px;
+    left: 10px;
+    position: absolute;
+    height: 60px;
+  }
+
+  .nav__content_menú{
+    margin-top: 20px;
+    margin-right: 40px;
+    cursor: pointer;
+  }
+  .nav__content_menú img{
+    margin-top: 20px;
+    margin-left: 10px;
+
+    width: 25px;
+    height: 25px;
+  }
+
+  .nav__ul{
+    display: none;
+
+  }
+
+  .nav__ul.active{
+    display: block;
+    position: absolute;
+    width: 100%;
+    margin-top: 370px;
+    text-align: center;
+
+  }
+  .nav__ul.desactive{
+    display: none;
+  }
+  .nav__content_menú img.active{
+    transition: all 1s;
+    transform: rotateZ(90deg);
+
+  }
+  .nav__content_menú img.desactive{
+    transition: all 1s;
+    transform: rotateZ(-3deg);
+
+  }
+
+  .seccion_1{
+    width: 100%;
+  }
+
+  .card_presentacion{
+    width: 100%;
+
+  }
+
+  .seccion_1{
+    display: block;
+
+  }
+
+  .seccion_2{
+    margin-top: 300px;
+margin-right: auto;
+display: flex;
+justify-content: center;
+width: 100%;
+border-radius: 2px;
+box-shadow: none;
+  }
+
+  .seccion_2_ofrecimiento_1{
+    width: 100%;
+height: 500px;
+display: flex;
+display: block;
+position: relative;
+border-radius: 2px;
+
+  }
+
+  .seccion_2_ofrecimiento_1_anuncio{
+    box-shadow: -0.5px 0px 10px 0px;
+    width: 100%;
+position: relative;
+top: 170px;
+padding: 0px;
+text-align: center;
+height: 460px;
+background-color: green;
+top: 0px;
+transition: all 1s;
+background: white;
+  }
+
+  .seccion_2_ofrecimiento_1_anuncio::before{
+    content: "";
+width: 100%;
+position: absolute;
+z-index: -1;
+background: #ED213A;
+background: -webkit-linear-gradient(to right, #93291E, #ED213A);
+background: linear-gradient(to right, #93291E, #ED213A);
+text-align: center;
+height: 500px;
+top: 0px;
+left: 0px;
+
+  }
+
+  .seccion_2_ofrecimiento_1_imagen{
+    width: 100%;
+    height: 500px;
+  }
+
+  .seccion_3{
+    margin-top: 300px;
+margin-right: auto;
+display: flex;
+justify-content: center;
+width: 100%;
+border-radius: 2px;
+box-shadow: none;
+  }
+
+  .seccion_2_ofrecimiento_2{
+    width: 100%;
+height: 500px;
+display: flex;
+display: block;
+position: relative;
+border-radius: 2px;
+margin-top: 240px;
+margin-bottom: 240px;
+
+  }
+
+  .seccion_2_ofrecimiento_2_imagen{
+    width: 100%;
+
+  }
+
+  .seccion_2_ofrecimiento_2_anuncio{
+    box-shadow: -0.5px 0px 10px 0px;
+    width: 100%;
+position: relative;
+top: 170px;
+padding: 0px;
+text-align: center;
+height: 460px;
+background-color: green;
+top: 0px;
+transition: all 1s;
+background: white;
+  }
+
+
+  footer{
+    display: block;
+  }
+  .image__footer{
+    display: block;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+  .footer__opciones_ul{
+    margin-left: 10px;
+  }
+
+
+
+
+}
+
+@media(min-width:300px) and (max-width:599px){
+  .card_presentacion__foto{
+    height: 200px ;
+  }
+
+  @media(min-width:600px) and (max-width:899px){
+    .card_presentacion__foto{
+      height: 350px !important;
+    }
+  }
